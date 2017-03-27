@@ -31,7 +31,10 @@
 			<div class="actions">
 				<?php echo Form::submit(array('value'=>'Login', 'name'=>'submit', 'class' => 'btn btn-lg btn-primary btn-block')); ?>
 			</div>
-
+    </br>
+            <div class="action">
+                <?php echo Html::anchor('/quenpass/login', 'Đổi mật khẩu', array('class' => 'btn btn-success')); ?>
+            </div>
 		<?php echo Form::close(); ?>
 	</div>
 </div>

@@ -20,26 +20,25 @@
 <div class="container">
 <div class="col-md-3 col-md-offset-4" >
 
+    <form class="form-signin">
 
-    <br class="form-signin ">
-        <h2 class="form-signin-heading">Đổi mật khẩu</h2>
-        <label for="inputEmail" class="sr-only">Nhap mat khau cu</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Nhap mat khau cu" required autofocus>
-    <div> </br> </div>
-        <label for="inputPassword" class="sr-only">Nhap mat khau moi</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Nhap mat khau moi" required >
-    <div> </br> </div>
-        <label for="inputPasswordConfirm" class="sr-only">Nhap lai mat khau moi</label>
-        <input type="passwordconfirm" id="inputPasswordConfirm" class="form-control" placeholder="Nhap lai mat khau moi" required>
-    <div> </br> </div>
-        <div class="actions">
-            <?php echo Form::submit(array('value=>Xac nhan','name'=>'submit','class'=>'btn btn-lg btn-primary btn-block')); ?>
-        </div>
+        <h2 class="form-signin-heading" >Đổi mật khẩu</h2>
+        <label for="inputEmail" class="sr-only">Nhap email</label>
+        <input type="email" id="inputEmail" class="form-control" placeholder="Nhap email" required autofocus>
+
+        <label for="inputPassword" class="sr-only">Nhap mat khau cu</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Nhap mat khau" required >
+
+    <label for="inputPasswordConfirm1" class="sr-only">Nhap mat khau moi</label>
+    <input type="passwordconfirm1" id="inputPasswordConfirm1" class="form-control" placeholder="Nhap mat khau moi" required >
+
+        <label for="inputPasswordConfirm2" class="sr-only">Nhap lai mat khau moi</label>
+        <input type="passwordconfirm2" id="inputPasswordConfirm2" class="form-control" placeholder="Nhap lai mat khau moi" required>
+
     </form>
+    <div class="actionss">
+        <?php echo Form::submit(array('value'=>'Xac nhan','name'=>'submit','class'=>'btn btn-lg btn-primary btn-block')); ?>
+    </div>
 </div>
-</div> <!-- /container -->
-
-
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<!--<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>-->
+</div>
 </body>

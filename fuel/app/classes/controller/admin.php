@@ -25,7 +25,12 @@ class Controller_Admin extends Controller_Base
 			}
 		}
 	}
-
+    public function action_redux()
+    {
+        $data['redux'] = Model_React::find('all');
+        $this->template->title = "Redux";
+        $this->template->content = View::forge('admin/redux',$data);
+    }
 	public function action_login()
 	{
 		// Already logged in

@@ -25,5 +25,3 @@
 		</ul>
 	</div>
 </div>
-<div id="content2"></div>
-<script src="../assets/js/bundle.js"> </script>

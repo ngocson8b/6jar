@@ -1,11 +1,20 @@
 <!DOCTYPE html>
-<html>
+
 <head>
 	<meta charset="utf-8">
 	<title><?php echo $title; ?></title>
 	<?php echo Asset::css('bootstrap.css'); ?>
 	<style>
 		body { margin: 50px; }
+
+        .example{
+            margin: 20px;
+        }
+
+        .glyphicon{
+            /*font-size: 20px;*/
+            color: green;
+        }
 	</style>
 	<?php echo Asset::js(array(
 		'http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js',
@@ -15,7 +24,7 @@
 		$(function(){ $('.topbar').dropdown(); });
 	</script>
 </head>
-<body>
+
 
 	<?php if ($current_user): ?>
 	<div class="navbar navbar-inverse navbar-fixed-top">
@@ -47,12 +56,15 @@
 							<?php
 						}
 					?>
+
+            <li><?php echo Html::anchor('admin/redux','Redux') ?></li>
+
 				</ul>
 				<ul class="nav navbar-nav pull-right">
 					<li class="dropdown">
 						<a data-toggle="dropdown" class="dropdown-toggle" href="#"><?php echo $current_user->username ?> <b class="caret"></b></a>
 						<ul class="dropdown-menu">
-							<li><?php echo Html::anchor('admin/logout', 'Logout') ?></li>
+							<li><?php echo Html::anchor('admin/logout', 'Dang xuat') ?></li>
 						</ul>
 					</li>
 				</ul>
@@ -96,5 +108,8 @@
 			</p>
 		</footer>
 	</div>
+
+
+
 </body>
 </html>

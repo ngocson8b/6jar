@@ -37,3 +37,4 @@
 	<?php echo Html::anchor('admin/posts/create', 'Add new Post', array('class' => 'btn btn-success')); ?>
 
 </p>
+
