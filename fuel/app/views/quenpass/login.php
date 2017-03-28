@@ -28,12 +28,12 @@
 
         <label for="inputPassword" class="sr-only">Nhap mat khau cu</label>
         <input type="password" id="inputPassword" class="form-control" placeholder="Nhap mat khau" required >
-
+<!--    // nếu type = password thì sẽ tự động đổi thành dấu *-->
     <label for="inputPasswordConfirm1" class="sr-only">Nhap mat khau moi</label>
-    <input type="passwordconfirm1" id="inputPasswordConfirm1" class="form-control" placeholder="Nhap mat khau moi" required >
+    <input type="password" id="inputPasswordConfirm1" class="form-control" placeholder="Nhap mat khau moi" required >
 
         <label for="inputPasswordConfirm2" class="sr-only">Nhap lai mat khau moi</label>
-        <input type="passwordconfirm2" id="inputPasswordConfirm2" class="form-control" placeholder="Nhap lai mat khau moi" required>
+        <input type="password" id="inputPasswordConfirm2" class="form-control" placeholder="Nhap lai mat khau moi" required>
 
     </form>
     <div class="actionss">

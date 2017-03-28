@@ -57,7 +57,7 @@
 						}
 					?>
 
-            <li><?php echo Html::anchor('admin/redux','Redux') ?></li>
+<!--            <li>--><?php //echo Html::anchor('admin/redux','Redux') ?><!--</li>-->
 
 				</ul>
 				<ul class="nav navbar-nav pull-right">
