@@ -117,30 +117,37 @@ var Test = React.createClass({
 var Time = React.createClass({
 
     newTime(){
-      this.setState({times: this.state.times
+      this.setState({times: Date().toLocaleString()
 
       });
+    },
+    showTime(){
+        alert(this.state.times);
     },
 
     getInitialState(){
        return {times: Date().toLocaleString()};
     },
 
-    render: function tick() {
+    render: function() {
         return (
             <div>
                 <h1>Hello, world!</h1>
-                <div>It is {this.state.times}.</div>
-                <button onClick={this.newTime}>Bay gio la</button>
-                <h2>It time {Date().toLocaleString()}</h2>
+
+
+
+                <h2>It time {this.state.times}</h2>
+                <button onClick={this.showTime}>Bay gio la</button>
             </div>
         )
 
 // });
 
-       setInterval(tick, 1000);
 
 
+    },
+    componentDidMount(){
+     setInterval(this.newTime,1000);
     }
 
 });
