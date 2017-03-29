@@ -1,5 +1,6 @@
 import React from 'react'
 import { render } from  'react-dom'
+import ReactDOM from 'react-dom'
 
 
 function getName(name) {
@@ -152,7 +153,7 @@ var ReactList = React.createClass({
 
     getInitialState(){
         list = this;
-        return {mang: ["Xin", "Chao", "Son"] }
+        return {mang: [] }
     },
 
     render: function () {
@@ -170,13 +171,22 @@ var ReactList = React.createClass({
          </div>
 
        );
-   }
+   // },
+   //  componentDidMount(){
+   //      var that = this;
+   //      $.post("",function (data) {
+   //         that.setState({mang: data});
+   //      });
+    }
 });
+
+
 
 var InputDiv = React.createClass({
 
     send(){
         list.setState({mang: list.state.mang.concat(this.refs.txt.value)});
+        ReactDOM.unmountComponentAtNode(document.getElementById('test'));
     },
     // concat: nối mảng
     render: function () {

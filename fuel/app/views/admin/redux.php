@@ -2,7 +2,13 @@
 /**
  * Created by PhpStorm.
  * User: ngocsontran
- * Date: 3/27/17
- * Time: 16:07
+ * Date: 3/28/17
+ * Time: 21:49
  */
-echo "Ngoc Son Tran";
+echo "toi la Ngoc Son";
+
+?>
+
+<div id="content2"></div>
+<script src="../assets/js/bundle2.js"> </script>
+
