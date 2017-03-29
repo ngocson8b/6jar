@@ -29,3 +29,8 @@ Link.propTypes = {
 }
 
 export default Link
+
+//preventDefault dùng để chặn hành động mặc định của sự kiện,
+// ví dụ như khi ta bấm vào thẻ a thì trình duyệt sẽ chuyển sang trang mới
+// hoặc gửi nội dung của input khi form xảy ra sự kiện submit
+// thẻ <a> là thẻ tạo đường link đến trang web out

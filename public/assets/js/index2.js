@@ -1,37 +1,15 @@
-/**
- * Created by ngocsontran on 3/29/17.
- */
-
 import React from 'react'
 import { render } from 'react-dom'
-import  ReactDOM from 'react-dom'
-import TrackList from './src/components/TrackList'
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
+import todoApp from './src/reducers'
+import App from './src/components/App'
 
+let store = createStore(todoApp)
 
-
-
-const tracks = [
-    {
-        id: 1,
-        title: 'Em cua ngay hom qua'
-
-    },
-    {
-        id: 2,
-        title: 'Con mua ngang qua'
-    }
-];
-
-
-
-
-
-// var Test  = React.createClass({
-//    render(){
-//        return(
-//          <div>Traafn Ngocj Sown</div>
-//        );
-//    }
-// });
-
-render(<TrackList tracks={tracks} />, document.getElementById('content2'));
+render(
+    <Provider store={store}>
+        <App />
+    </Provider>,
+    document.getElementById('content2')
+);
