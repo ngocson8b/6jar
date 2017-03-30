@@ -13,3 +13,6 @@ render(
     </Provider>,
     document.getElementById('content2')
 );
+
+
+

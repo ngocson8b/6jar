@@ -2,7 +2,7 @@
   "name": "dong",
   "version": "0.0.1",
   "description": "Get started with React, Redux",
-  "main": "index2.js",
+  "main": "index3.js",
   "dependencies": {
     "fetch": "^1.0.0",
     "history": "^3.0.0",
@@ -16,7 +16,8 @@
     "react-router-redux": "^4.0.4",
     "react-select": "^0.9.1",
     "react-tabs": "^0.5.5",
-    "redux": "^3.1.2",
+    "redux": "^3.6.0",
+    "redux-logger": "^3.0.0",
     "redux-thunk": "^2.1.0"
   },
   "devDependencies": {
@@ -26,9 +27,9 @@
     "uglifyjs": "^2.4.10"
   },
   "scripts": {
-    "start": "watchify -t --poll=100 -o ./bundle2.js -v -d ./index2.js",
-    "watch": "webpack  --progress --colors --watch --config ./build2.config.js",
-    "build": "webpack --config ./build2.config.js"
+    "start": "watchify -t --poll=100 -o ./bundle3.js -v -d ./index3.js",
+    "watch": "webpack  --progress --colors --watch --config ./build3.config.js",
+    "build": "webpack --config ./build3.config.js"
   },
   "repository": {
     "type": "git",

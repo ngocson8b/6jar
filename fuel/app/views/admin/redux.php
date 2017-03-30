@@ -9,6 +9,8 @@ echo "toi la Ngoc Son";
 
 ?>
 
-<div id="content2"></div>
-<script src="../assets/js/bundle2.js"> </script>
+<!--<div id="content2"></div>-->
+<!--<script src="../assets/js/bundle2.js"> </script>-->
 
+<div id="content3"></div>
+<script src="../assets/js/bundle3.js"> </script>
